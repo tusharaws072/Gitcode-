@@ -1,0 +1,18 @@
+# main.tf
+
+provider "aws" {
+  region = "us-west-2"  # Replace with your desired AWS region
+}
+
+resource "aws_ebs_volume" "example" {
+  availability_zone = "us-west-2a"  # Replace with your desired availability zone
+  size              = 10            # Size in GB
+  tags = {
+    Name = "example-ebs-volume"
+  }
+}
+
+output "volume_id" {
+  value = aws_ebs_volume.example.id
+}
+
