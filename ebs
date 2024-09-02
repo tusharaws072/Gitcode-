@@ -18,3 +18,14 @@ output "volume_id" {
 
 # hello tushu
 
+
+
+
+
+ sudo service docker status
+  sudo service docker start
+  sudo ls -la /var/run/docker.sock
+  sudo apt install docker
+   sudo apt-get update
+   sudo apt-get upgrade
+ 
